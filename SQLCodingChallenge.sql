@@ -137,7 +137,7 @@ HAVING COUNT(AW.ArtworkID) > 2;
 SELECT AW.Title FROM Artworks AW
 JOIN ExhibitionArtworks EA ON AW.ArtworkID = EA.ArtworkID
 JOIN Exhibitions E ON EA.ExhibitionID = E.ExhibitionID
-WHERE E.Title = 'Modern Art Masterpieces' AND E.Title = 'Renaissance Art';
+WHERE E.Title IN ('Modern Art Masterpieces','Renaissance Art');
 
 --7. Find the total number of artworks in each category
 
